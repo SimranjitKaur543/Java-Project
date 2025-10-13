@@ -1,55 +1,280 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Java Project Daily Diary</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Project Daily Diary | Simranjit Kaur</title>
+
+  <style>
+    /* Body */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      color: #333;
+    }
+
+    /* Header */
+    .project-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1f3c88, #2ecc71);
+      color: white;
+      padding: 25px 20px;
+      border-radius: 12px;
+      max-width: 1000px;
+      margin: 20px auto;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+    }
+
+    .project-header .college-logo {
+      width: 120px;
+      height: auto;
+      margin-right: 25px;
+      border-radius: 10px;
+      border: 2px solid white;
+      margin-bottom: 10px;
+    }
+
+    .project-header .project-info h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+
+    .project-header .project-info p {
+      margin: 3px 0;
+      font-size: 1rem;
+    }
+
+    /* Navigation buttons */
+    nav {
+      max-width: 1000px;
+      margin: 0 auto 40px auto;
+      text-align: center;
+    }
+
+    .day-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .day-buttons a {
+      background-color: #34495e;
+      color: white;
+      text-decoration: none;
+      padding: 12px 22px;
+      margin: 5px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .day-buttons a:hover {
+      background-color: #2ecc71;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    /* Main content */
+    main {
+      max-width: 1000px;
+      margin: 0 auto 40px auto;
+      padding: 25px 20px;
+    }
+
+    section {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+      transition: transform 0.2s;
+    }
+
+    section:hover {
+      transform: translateY(-2px);
+    }
+
+    main h2 {
+      color: #1f3c88;
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    main p, main li {
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    main ul {
+      padding-left: 20px;
+    }
+
+    /* Project Documents / Downloads section */
+    .files {
+      text-align: center;
+    }
+
+    .files ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .files ul li {
+      margin: 10px 15px;
+    }
+
+    .files ul li a {
+      display: inline-block;
+      background-color: #2980b9;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .files ul li a:hover {
+      background-color: #2ecc71;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 18px 0;
+      background-color: #1f3c88;
+      color: white;
+      border-radius: 0 0 12px 12px;
+      font-weight: bold;
+      box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+      margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .project-header {
+        flex-direction: column;
+      }
+      .project-header .college-logo {
+        margin-right: 0;
+      }
+      .day-buttons a {
+        padding: 10px 15px;
+        font-size: 0.95rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <!-- Header with college logo and info -->
+  <!-- Header Section -->
   <header class="project-header">
-    <img src="college_logo.png" alt="College Logo" class="college-logo">
+    <img src="college_logo.png" alt="College Logo" class="college-logo" />
     <div class="project-info">
       <h1>📘 Java Project Daily Diary</h1>
       <p><strong>Student:</strong> Simranjit Kaur</p>
       <p><strong>URN:</strong> 2302685</p>
-      <p><strong>Department:</strong> CSE</p>
+      <p><strong>Department:</strong> Computer Science & Engineering</p>
+      <p><strong>Training Company:</strong> ThinkNEXT Technologies Pvt. Ltd.</p>
+      <p><strong>Domain:</strong> Java Development</p>
       <p><strong>Duration:</strong> 23 June 2025 – 21 July 2025</p>
     </div>
   </header>
 
-  <!-- Navigation -->
+  <!-- Navigation with day buttons -->
   <nav>
-    <ul>
-      <li><a href="day1.html">Day 1</a></li>
-      <li><a href="day2.html">Day 2</a></li>
-      <li><a href="day3.html">Day 3</a></li>
-      <li><a href="day4.html">Day 4</a></li>
-      <li><a href="day5.html">Day 5</a></li>
-      <li><a href="day6.html">Day 6</a></li>
-      <li><a href="day7.html">Day 7</a></li>
-      <li><a href="day8.html">Day 8</a></li>
-      <li><a href="day9.html">Day 9</a></li>
-      <li><a href="day10.html">Day 10</a></li>
-      <li><a href="day11.html">Day 11</a></li>
-      <li><a href="day12.html">Day 12</a></li>
-      <li><a href="day13.html">Day 13</a></li>
-      <li><a href="day14.html">Day 14</a></li>
-      <li><a href="day15.html">Day 15</a></li>
-    </ul>
+    <div class="day-buttons">
+      <a href="day1.html">Day 1</a>
+      <a href="day2.html">Day 2</a>
+      <a href="day3.html">Day 3</a>
+      <a href="day4.html">Day 4</a>
+      <a href="day5.html">Day 5</a>
+    </div>
+    <div class="day-buttons">
+      <a href="day6.html">Day 6</a>
+      <a href="day7.html">Day 7</a>
+      <a href="day8.html">Day 8</a>
+      <a href="day9.html">Day 9</a>
+      <a href="day10.html">Day 10</a>
+    </div>
+    <div class="day-buttons">
+      <a href="day11.html">Day 11</a>
+      <a href="day12.html">Day 12</a>
+      <a href="day13.html">Day 13</a>
+      <a href="day14.html">Day 14</a>
+      <a href="day15.html">Day 15</a>
+    </div>
   </nav>
 
-  <!-- Main content -->
+  <!-- Main Content -->
   <main>
-    <p>Welcome! Click on any day above to view the Java Project Daily Diary.</p>
+    <section class="welcome">
+      <h2>Welcome to My Java Project Diary</h2>
+      <p>
+        This diary documents my daily learning and development process during my
+        industrial training at <strong>ThinkNEXT Technologies Pvt. Ltd.</strong>.
+        It covers all the work, experiments, and Java concepts I learned while
+        building my project.
+      </p>
+    </section>
 
+    <section class="project-details">
+      <h2>📋 Project Overview</h2>
+      <p>
+        The <strong>Student Management System</strong> project was developed using
+        <strong>Java</strong> and <strong>MySQL</strong> to manage student
+        information efficiently. It provides options to add, view, update, and
+        delete student records through an easy-to-use interface designed with
+        <strong>Java Swing</strong>.
+      </p>
 
+      <h3>🎯 Objective</h3>
+      <p>
+        The main objective of this training was to gain practical exposure to
+        software development using Java, understand object-oriented programming,
+        and implement a real-time project that applies database connectivity and
+        GUI design principles.
+      </p>
+
+      <h3>🔧 Tools & Technologies Used</h3>
+      <ul>
+        <li>Programming Language: Java</li>
+        <li>Database: MySQL</li>
+        <li>Frontend: Java Swing (GUI)</li>
+        <li>IDE: NetBeans / Eclipse</li>
+        <li>Version Control: GitHub</li>
+      </ul>
+    </section>
+
+    <section class="files">
+      <h2>📂 Project Documents</h2>
+      <ul>
+        <li><a href="Training_Report.pdf" target="_blank">📄 Training Report</a></li>
+        <li><a href="Training_Certificate.pdf.pdf" target="_blank">🎓 Training Certificate</a></li>
+      </ul>
+      <p><em>Click the above links to view or download the PDF documents.</em></p>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Simranjit Kaur | Java Project Diary</p>
+    <p>© 2025 Simranjit Kaur | Java Project Diary | ThinkNEXT Technologies Pvt. Ltd.</p>
   </footer>
 </body>
 </html>
