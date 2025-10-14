@@ -1,5 +1,5 @@
 # 📘 Java Project – Daily Diary  
-**Name:** Simranjit Kaur  
+**Name:**Deepa Basnet  
 **Project Title:** Event Management System (Java)  
 **Duration:** 23 June 2025 – 21 July 2025  
 **Platform:** Java, MySQL, NetBeans / IntelliJ IDEA  
