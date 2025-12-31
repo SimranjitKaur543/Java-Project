@@ -1,6 +1,6 @@
 # 📘 Java Project – Daily Diary  
-**Name:**Deepa Basnet  
-**Project Title:** Event Management System (Java)  
+**Name:**Simranjit Kaur  
+**Project Title:** Contact Book (Java)  
 **Duration:** 23 June 2025 – 21 July 2025  
 **Platform:** Java, MySQL, NetBeans / IntelliJ IDEA  
 **Repository:** [GitHub Repo Link](https://github.com/)  
